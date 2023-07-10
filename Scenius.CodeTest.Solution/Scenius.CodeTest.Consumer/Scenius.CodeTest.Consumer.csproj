@@ -5,6 +5,26 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
+      <PackageReference Include="MassTransit" Version="8.1.0-develop.1419" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.0-develop.1419" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.5.23280.1" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-preview.5.23280.8" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0-preview.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Scenius.CodeTest.Contracts\Scenius.CodeTest.Contracts.csproj" />
+    </ItemGroup>
 
 </Project>

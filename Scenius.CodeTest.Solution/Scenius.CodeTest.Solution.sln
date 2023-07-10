@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenius.CodeTest.API", "Sce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenius.CodeTest.Consumer", "Scenius.CodeTest.Consumer\Scenius.CodeTest.Consumer.csproj", "{7FDABEB7-5FD5-4C6B-9406-145FABFCC7E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenius.CodeTest.Contracts", "Scenius.CodeTest.Contracts\Scenius.CodeTest.Contracts.csproj", "{D29B0BE1-2130-4AEE-A36A-4EF0E162771B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{7FDABEB7-5FD5-4C6B-9406-145FABFCC7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FDABEB7-5FD5-4C6B-9406-145FABFCC7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FDABEB7-5FD5-4C6B-9406-145FABFCC7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D29B0BE1-2130-4AEE-A36A-4EF0E162771B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D29B0BE1-2130-4AEE-A36A-4EF0E162771B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D29B0BE1-2130-4AEE-A36A-4EF0E162771B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D29B0BE1-2130-4AEE-A36A-4EF0E162771B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
