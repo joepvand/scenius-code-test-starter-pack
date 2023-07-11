@@ -7,7 +7,7 @@
 - RabbitMQ
 - Postgres database
 - Backend unit test voorbeelden
-
+- Realtime communicatie met SignalR. 
 ### Frontend
 - Frontend in angular
 - Bootstrap geinstalleerd en gebruikt
