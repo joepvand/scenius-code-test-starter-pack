@@ -1,11 +1,19 @@
 # Scenius Code Test Starter Pack
 
-This repository contains an initial starting point for developing your code-test application, as scaffolding the application is not a part of the challenge. It contains the following directories:
+## Notes
 
-| Directory | Contents |
-| --------- | -------- |
-| Scenius.CodeTest.Solution | An empty solution with two applications in C# |
-| Scenius.CodeTest.UI | A scaffolded Angular project |
-| Scenius.CodeTest.Docker | Empty directory to store your Dockerfiles in |
+### Backend
+- Messaging implementation met MassTransit, dit omdat de abstractie over je gekozen message bus erg handig is, en masstransit dit makkelijk maakt.
+- RabbitMQ
+- Postgres database
+- Backend unit test voorbeelden
 
-You may decide yourself what to keep. You are not required to use any of these sources in your implementation.
+### Frontend
+- Frontend in angular
+- Bootstrap geinstalleerd en gebruikt
+- e2e testing met protractor geprobeerd, maar mijn 0 ervaring in Angular maakte dit nog te lastig, ik kwam niet door compile / dependency issues heen. 
+
+### Docker / k8s
+
+- Applicaties gedockerized met docker compose
+- K8s ready gemaakt, echter theoretisch. Images staan niet op een container registry, en het cluster zou moeten worden voorzien van een ingress point / loadbalancer.
