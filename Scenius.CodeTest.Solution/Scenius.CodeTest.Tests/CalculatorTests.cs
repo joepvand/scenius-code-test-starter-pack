@@ -48,4 +48,21 @@ public class CalculatorTests
         Assert.Equal(_calculator.Calc("-(1)").result, -1d);
     }
     
+    [Fact]
+    public void RejectsInvalidFormula1()
+    {
+        Assert.Throws<Exception>(() =>
+        {
+            _calculator.Calc("abc");
+        });
+    }
+    
+    [Fact]
+    public void RejectsInvalidFormula2()
+    {
+        Assert.Throws<Exception>(() =>
+        {
+            _calculator.Calc("a - b * c");
+        });
+    }
 }
