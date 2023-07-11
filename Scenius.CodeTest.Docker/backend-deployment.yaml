@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    service: backend
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: backend
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+       service: backend
+    spec:
+      containers:
+        - image: joepvand/scenius-backend
+          name: backend
+          ports:
+            - containerPort: 5000
+          resources: {}
+      restartPolicy: Always
+status: {}

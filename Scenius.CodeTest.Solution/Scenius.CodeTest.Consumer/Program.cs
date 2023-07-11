@@ -1,11 +1,13 @@
 ﻿using MassTransit;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Scenius.CodeTest.API.Publishers;
 using Scenius.CodeTest.Contracts;
 
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddDbContext<DataContext>();
+builder.Services.AddScoped<CalculationResultPublisher>();
 builder.Services.AddMassTransit(x =>
 {
     // elided...

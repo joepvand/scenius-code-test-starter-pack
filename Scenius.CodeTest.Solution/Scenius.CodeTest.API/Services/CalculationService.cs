@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Scenius.CodeTest.API.Publishers;
 using Scenius.CodeTest.Contracts;
-using Scenius.CodeTest.Contracts.Models;
 
 namespace Scenius.CodeTest.API.Services;
 

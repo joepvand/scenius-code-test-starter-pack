@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: frontend
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: frontend
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        service: frontend
+    spec:
+      containers:
+        - image: joepvand/scenius-frontend
+          name: frontend
+          ports:
+            - containerPort: 4200
+      restartPolicy: Always

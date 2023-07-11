@@ -3,18 +3,18 @@ using Microsoft.AspNetCore.Mvc;
 using Scenius.CodeTest.API.Models;
 using Scenius.CodeTest.API.Publishers;
 using Scenius.CodeTest.API.Services;
-using Scenius.CodeTest.Contracts.Models;
+
 
 namespace Scenius.CodeTest.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
-public class CalculationController : ControllerBase
+[Route("api/[controller]")]
+public class CalculationsController : ControllerBase
 {
-	private readonly ILogger<CalculationController> _logger;
+	private readonly ILogger<CalculationsController> _logger;
 	private readonly CalculationService _calculationService;
 
-	public CalculationController(ILogger<CalculationController> logger, CalculationService calculationService)
+	public CalculationsController(ILogger<CalculationsController> logger, CalculationService calculationService)
 	{
 		_logger = logger;
 		_calculationService = calculationService;

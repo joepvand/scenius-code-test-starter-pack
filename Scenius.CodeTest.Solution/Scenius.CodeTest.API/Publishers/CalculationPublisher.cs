@@ -14,6 +14,6 @@ public class CalculationPublisher
 
     public async  Task SendCalculationAsync(string value)
     {
-        await _bus.Publish(new CalculationContract() { temp = value });
+        await _bus.Publish(new CalculationContract(value));
     }
 }

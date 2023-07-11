@@ -1,5 +1,5 @@
 ﻿using System.Data;
-using Scenius.CodeTest.Contracts.Models;
+using Scenius.CodeTest.Contracts;
 
 namespace Scenius.CodeTest.Consumer;
 

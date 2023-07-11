@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Scenius.CodeTest.Contracts.Models;
 
 namespace Scenius.CodeTest.Contracts;
 
